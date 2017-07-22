@@ -154,7 +154,9 @@ public class TextSticker extends Sticker {
     textPaint.setTypeface(typeface);
     return this;
   }
-
+@NonNull public Typeface getTypeface(){
+  return textPaint.getTypeface();
+}
   @NonNull public TextSticker setTextColor(@ColorInt int color) {
     textPaint.setColor(color);
     return this;
